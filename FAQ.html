@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>RentCar(FAQ)</title>
+    <link rel="stylesheet" href="homesample.css">
+    <link rel="stylesheet" href="FAQ.css">
+    <link rel="stylesheet" href="animal_egg.css">
+    <link rel="stylesheet" href="lifecycle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="nav.js" defer></script>
+    <link rel="stylesheet" href="navigationcontrol.css">
+    <link rel="stylesheet" href="login.css">
+    <script type="text/javascript" src="login.js" defer></script>
+    <link rel="stylesheet" href="sampledsd.css">
+    <link rel="icon" type="image/x-icon" href="https://media.istockphoto.com/id/1290071290/vector/rental-car-icon.jpg?s=612x612&w=0&k=20&c=q4EsvU3jJJYbcZTJ1EzKh6c-Dvy39HagvAUgTCRK9bE=">
+
+  </head>
+  <body>
+    <div class="">
+      <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-long-arrow-up" style="font-size:20px;color:white"></i></button>
+    </div>
+    <script type="text/javascript">
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
+    <!-- The Modal -->
+    <!-- The Modal -->
+    <div id="myModaln" class="modaln">
+
+      <!-- Modal content -->
+      <div class="modal-contentn">
+        <span class="closen">&times;</span>
+        <h2>Welcome, <span id = usernamee></span></h2>
+        <div class="news">
+        <div class="container">
+          <div class="card">
+            <div class="box">
+              <div class="content">
+                <div class="icon"><i class="fa fa-spoon"></i></div>
+                <h3>1 Month Rental Subscription</h3>
+                <h4><sup>$</sup>80</h4>
+                <a href="checkout.html">Subscribe</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="box">
+              <div class="content">
+                <div class="icon"><i class="fa fa-coffee"></i></div>
+                <h3>12 Month/1 Year Rental Subscription</h3>
+                <h4><sup>$</sup>200</h4>
+                <a href="checkout.html">Subscribe</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="box">
+              <div class="content">
+                <div class="icon"><i class="fa fa-birthday-cake"></i></div>
+                <h3>2 - 3 Years Rental Subscription</h3>
+                <h4><sup>$</sup>500.00</h4>
+                <a href="checkout.html">Subscribe</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div></div>
+    <div id="modal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <section>
+          <div class="container">
+            <div class="user signinBx">
+              <div class="imgBx"><img src="https://media.istockphoto.com/id/1290071290/vector/rental-car-icon.jpg?s=612x612&w=0&k=20&c=q4EsvU3jJJYbcZTJ1EzKh6c-Dvy39HagvAUgTCRK9bE=" alt=""></div>
+                <div class="formBx">
+                  <form class="" action="index.html" method="get">
+                    <h2 style="color: white;">Sign In</h2>
+                    <input id="siusername" type="text"  placeholder="Username" required>
+                    <input type="password" name="pass" placeholder="Password" required minlength="8">
+                    <input type="submit" onclick="handleSubmit()" value="Log In" >
+                    <p class="signup"style="color: white;" >don't have an account? <a href="#" onclick="toggleForm();">Sign up</a> </p>
+                  </form>
+                </div>
+            </div>
+
+            <div class="user signupBx">
+
+                <div class="formBx">
+                  <form class="" action="index.html" method="get">
+
+                    <h2>Create an account</h2>
+                    <input class="su_username" type="text"  placeholder="Username" required>
+                    <input type="email"  placeholder="Email Address" required>
+                    <input type="password" name="pass" placeholder="Create Password" required>
+                    <input type="password" name="cpass" placeholder="Confirm Password" required>
+                    <input type="submit" value="Sign Up" onclick="signup_function()">
+                    <p class="signup">Already have an account? <a href="#" onclick="toggleForm();">Sign In</a> </p>
+                  </form>
+                </div>
+                <div class="imgBx"><img src="https://media.istockphoto.com/id/1290071290/vector/rental-car-icon.jpg?s=612x612&w=0&k=20&c=q4EsvU3jJJYbcZTJ1EzKh6c-Dvy39HagvAUgTCRK9bE=" alt=""></div>
+            </div>
+          </div>
+      </section>
+
+      </div>
+
+    </div>
+  
+<!--SLIDESHOW CONTAINER!-->
+    <div class="slideshow-container">
+      <div id="div1" class="primary-header flex" style="position: fixed; width: 100%;">
+        <a href="home.html">
+          <img class="logo" style="cursor: pointer;" height="10%" width="20%" src="Trans_RENTCAR_LOGO.png" alt="Logo">
+        </a> 
+        
+        <button id="mobile-nav-toggle"class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false" type="button"><div class="menu"></div><div class="menu"></div><div class="menu"></div></button>
+        <nav style="position: fixed; right:0;">
+              <ul id="primary-navigation" data-visible="false" class="primary-navigation flex" id="nav" >
+                <li class="nav"><a href="home.html">HOME</a></li>
+                <li class="nav"><a href="rental_List.html">Our Rental Cars</a></li>
+                <li class="nav"><a href="manage_rental.html">Manage Rentals</a></li>
+                <li class="nav current"><a href="FAQ.html">FAQ</a></li>
+                <li id="login"><a href="#">Login</a></li>
+              </ul>
+            </nav>
+        </div>
+      </div>
+    <br>
+    </div>
+<div style="margin-top: 15%;">
+  <h1 id="partofeggtitle">Frequently Asked Questions</h1>
+  <div class="parts_of_eggs">
+    <div class="partofeggs">
+      <button class="eggparts_details" id="Shell">Can I rent a card without putting a deposit?</button>
+        <div class="eggpartscontent">
+          <p class="describe">
+          No, before you are able to proceed with reserving your rental car, you are required to make a 50% deposit payment first
+          </p>
+        </div>
+  
+      <button class="eggparts_details" id="Shell">If I do not return the rental car on time will I be charged extra?</button>
+        <div class="eggpartscontent">
+          <p class="describe">
+            Customers are advised to return their rental cars duely to prevent a 10% late fee charge daily.
+          </p>
+        </div>
+
+      <button class="eggparts_details" id="Shell">What are the accepted payment methods</button>
+        <div class="eggpartscontent">
+          <p class="describe">
+            The accepted payment types are by credit or debit card via Visa, MasterCard, etc.
+          </p>
+        </div>
+    </div>
+        <script>
+        var acc = document.getElementsByClassName("eggparts_details");
+        var i;
+  
+        for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+          this.classList.toggle("bactive");
+          var panel = this.nextElementSibling;
+          if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+          } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+          }
+        });
+        }
+        </script>
+    </div>
+</div>
+
+
+<div class="feedback">
+  <h3 class="feedback_title">We would like to hear from you! Any feedback?</h3>
+  <label>
+    <p>
+      <form class="" action="index.html" method="post">
+        <textarea name="feedback" rows="10" cols="100" placeholder="Feedback...."></textarea>
+        <input type="submit" id="submit" name="" value="Submit">
+    </form>
+    </p>
+  </label>
+  
+</div>
+
+  <div class="bottom">
+    <img height="100px" width="250px" style="margin-top: 30px;" src="Trans_RENTCAR_LOGO.png" alt="logo"><!-- IDEA: img scr is 112.png -->
+    <div class="connectall">
+    <h3>Partnership:</h3>
+    <img id="logo" src="images\logotype-set_53876-12050-removebg-preview.png" alt="loogo">
+    <h3 id="Connect">Connect with Us: </h3>
+    <a target="_blank"href="https://www.facebook.com/" class="fa fa-facebook"></a>
+    <a target="_blank"href="https://twitter.com/i/flow/login" class="fa fa-twitter"></a>
+    <a target="_blank"href="https://www.youtube.com/" class="fa fa-youtube"></a>
+    <a target="_blank"href="https://www.instagram.com/" class="fa fa-instagram"></a>
+    <a target="_blank"href="https://www.reddit.com/register/" class="fa fa-reddit"></a>
+  </div>
+  <div class="" style="float:right;margin-top:-20%;margin-right:20%;">
+    <h3>Contact Us:</h3>
+    <p>Mobile: +65 12345678</p>
+    <p>Address: 190 Antartica Road,#03-10</p>
+    <p>Antartica 159545.</p>
+    <h3>Terms & Condition:</h3>
+    <p><a href="Terms and Condition.html" target ="_blank">Click here for more infromation</a></p>
+    <hr style="width:20%;border:1px;">
+    <p>Copyright &copy; 2022 Eggoulo Inc. All right reserved.</p>
+  </div>
+  </div>
+  </body>
+</html>

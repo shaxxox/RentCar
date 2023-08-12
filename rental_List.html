@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>RentCar(Rent NOW!)</title>
+    <link rel="stylesheet" href="navigationcontrol.css">
+    <link rel="stylesheet" href="rental_List.css">
+    <script src="rental_List.js" defer></script>
+    <script src="nav.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="login.css">
+    <script type="text/javascript" src="login.js" defer></script>
+    <link rel="stylesheet" href="sampledsd.css">
+    <link rel="icon" type="image/x-icon" href="https://media.istockphoto.com/id/1290071290/vector/rental-car-icon.jpg?s=612x612&w=0&k=20&c=q4EsvU3jJJYbcZTJ1EzKh6c-Dvy39HagvAUgTCRK9bE=">
+    <style>
+    
+    
+    .form-group label {
+        color: #002D62; /* Blue color */
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    .form-control {
+        border: 1px solid #002D62; /* Blue border */
+        border-radius: 4px;
+        padding: 8px;
+        margin-bottom: 10px;
+    }
+
+    .form-check-input:checked + .form-check-label::before {
+        border-color: #002D62; /* Blue radio button color */
+    }
+
+    #dropdown {
+        border: 1px solid #002D62; /* Blue border for dropdown */
+        border-radius: 4px;
+        padding: 8px;
+        margin-bottom: 10px;
+        color: #002D62; /* Blue color for dropdown text */
+    }
+
+    .btn-primary {
+        background-color: #002D62; /* Blue background for button */
+        color: white;
+        font-style: none;
+        border: none;
+        border-radius: 4px;
+        padding: 10px 20px;
+        cursor: pointer;
+        transition: background-color 0.2s;
+    }
+
+    .btn-primary:hover {
+        background-color: grey; /* Darker blue on hover */
+        border: 2px solid #002D62;
+    }
+    </style>
+
+  </head>
+  <body>
+    <!-- The Modal -->
+    <div id="myModaln" class="modaln">
+
+      <!-- Modal content -->
+      <div class="modal-contentn">
+        <span class="closen">&times;</span>
+        <h2>Welcome, <span id = usernamee></span></h2>
+        <div class="news">
+        <div class="container">
+          <div class="card">
+            <div class="box">
+              <div class="content">
+                <div class="icon"><i class="fa fa-spoon"></i></div>
+                <h3>1 Month Rental Subscription</h3>
+                <h4><sup>$</sup>80</h4>
+                <a href="checkout.html">Subscribe</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="box">
+              <div class="content">
+                <div class="icon"><i class="fa fa-coffee"></i></div>
+                <h3>12 Month/1 Year Rental Subscription</h3>
+                <h4><sup>$</sup>200</h4>
+                <a href="checkout.html">Subscribe</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="box">
+              <div class="content">
+                <div class="icon"><i class="fa fa-birthday-cake"></i></div>
+                <h3>2 - 3 Years Rental Subscription</h3>
+                <h4><sup>$</sup>500.00</h4>
+                <a href="checkout.html">Subscribe</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div></div>
+    <div id="modal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <section>
+        <div class="container">
+          <div class="user signinBx">
+            <div class="imgBx"><img src="https://media.istockphoto.com/id/1290071290/vector/rental-car-icon.jpg?s=612x612&w=0&k=20&c=q4EsvU3jJJYbcZTJ1EzKh6c-Dvy39HagvAUgTCRK9bE=" alt=""></div>
+              <div class="formBx">
+                <form class="" action="index.html" method="get">
+                  <h2 style="color: white;">Sign In</h2>
+                    <input id="siusername" type="text"  placeholder="Username" required>
+                    <input type="password" name="pass" placeholder="Password" required minlength="8">
+                    <input type="submit" onclick="handleSubmit()" value="Log In" >
+                    <p class="signup"style="color: white;" >don't have an account? <a href="#" onclick="toggleForm();">Sign up</a> </p>
+                </form>
+              </div>
+          </div>
+
+         <div class="user signupBx">
+              <div class="formBx">
+                <form class="" action="form.html" method="get">
+                  <h2>Create an account</h2>
+                  <input class="su_username" type="text"  placeholder="Username" required>
+                  <input type="email"  placeholder="Email Address" required>
+                  <input type="password" name="pass" placeholder="Create Password" required>
+                  <input type="password" name="cpass" placeholder="Confirm Password" required>
+                  <input type="submit" value="Sign Up" onclick="signup_function()">
+                  <p class="signup">Already have an account? <a href="#" onclick="toggleForm();">Sign In</a> </p>
+                </form>
+              </div>
+              <div class="imgBx"><img src="1x1__0033_bakersbrew-bakingclasses-july2022-0593.jpg" alt=""></div>
+          </div>
+        </div>
+      </section>
+
+      </div>
+
+    </div>
+    <div id="div1" class="primary-header flex" style="position: fixed; width: 100%;">
+      <a href="home.html">
+        <img class="logo" style="cursor: pointer;" height="10%" width="20%" src="Trans_RENTCAR_LOGO.png" alt="Logo">
+      </a> 
+      
+      <button id="mobile-nav-toggle"class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false" type="button">
+        <div class="menu"></div>
+        <div class="menu"></div>
+        <div class="menu"></div>
+      </button>
+      <nav style="position: fixed; right:0;">
+            <ul id="primary-navigation" data-visible="false" class="primary-navigation flex" id="nav" >
+              <li class="nav"><a href="home.html" style="text-decoration: none; color: white;">HOME</a></li>
+              <li class="nav current"><a href="rental_List.html"  style="text-decoration: none; color: white;">Our Rental Cars</a></li>
+              <li class="nav"><a href="manage_rental.html"  style="text-decoration: none; color: white;">Manage Rentals</a></li>
+              <li class="nav"><a href="FAQ.html" style="text-decoration: none; color: white;">FAQ</a></li>
+              <li id="login"><a href="#" style="text-decoration: none; color: white;">Login</a></li>
+            </ul>
+          </nav>
+      </div>
+
+    <div class="image">
+      <img src="https://www.erieinsurance.com/-/media/images/blog/articlephotos/2018/rentalcarlg.jpg?rev=988292a171a94e568eee52f6956070f2" alt="">
+      <h1>Our Rental Cars</h1>
+      <h4>
+      </h4>
+    </div>
+
+    <div class="icon-bar">
+    <a target="_blank" href="https://www.facebook.com/" class="facebook"><i class="fa fa-facebook"></i></a>
+    <a target="_blank"href="https://twitter.com/i/flow/login" class="twitter"><i class="fa fa-twitter"></i></a>
+    <a target="_blank"href="https://www.google.com/" class="google"><i class="fa fa-google"></i></a>
+    <a target="_blank"href="https://www.instagram.com/" class="instagram"><i class="fa fa-instagram"></i></a>
+    <a target="_blank"href="https://www.youtube.com/" class="youtube"><i class="fa fa-youtube"></i></a>
+  </div>
+
+    <div class="">
+      <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-long-arrow-up" style="font-size:20px;color:white"></i></button>
+    </div>
+
+    <div class="back">
+      <div class="start">
+        <p><span style="font-size:15px;font-weight:bold;">Here are some reasons why renting a car is MORE worthy than buying one!!</span><br><br>
+        Do you even need a recipe to find something to do with an egg? No, not really, but why limit yourself?<br><br> With these egg recipes, you’ve got eggs prepared every way you can possibly imagine. That means baked with coconut milk and cilantro! Fried on top of fried black rice! Poached with shrimp and grits! Swirled raw into a creamy carbonara! Scrambled with tons of greens (and whatever else you find in the fridge) for a frittata. Steamed and topped with chile oil and herbs. And of course, perfectly jammy. <br><br>Shockingly, Americans once ate twice as many eggs as they do today. With this many good egg recipes to keep us craving, we’re ready to eat up.</p>
+        <!--<iframe width="45%" height="300px" src="https://www.youtube.com/watch?v=-6DsBkvFLSw" title="Car Rental video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>!-->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/-6DsBkvFLSw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+
+      <p class="typeofegg_title">Our Rental Car List</p>
+      <div class="typeofeggs">
+        <!-- NOTE: beet egg -->
+        <div class="type beetegg">
+        <img class="type_img" src="https://www.speedomotoring.com.sg/inventory/upload/660/IMG_5670.JPG" alt="">
+        <h3>CAR 1</h3>
+        <p>this car will suit u yay</p>
+        <p>$100 per day</p>
+        <button id="open0" class="viewmore" type="button" name="button" style="cursor: pointer;">&nbspReserve Now</button>
+                <!-- The Modal -->
+                <div id="modal_container0" class="modal" style=" display: none; position: fixed;top: 0; left: 0; width: 100%;height: 100%; background-color: rgba(0, 0, 0, 0.4); z-index: 9999;">
+                  <!-- Modal content -->
+                  <div class="modal_content" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: white; padding: 20px; border-radius: 8px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);">
+                    <span class="close0 cl">&times;</span>
+                        <h3>Reserve your rental car:</h3>
+                        <form>
+                          <div class="form-group">
+                              <label for="name">Name:</label> <br>
+                              <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                          </div>
+              
+                          <div class="form-group">
+                              <label for="email">Email:</label> <br>
+                              <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                          </div>
+
+                          <div class="form-group">
+                            <label for="number">Mobile No:</label> <br>
+                            <input type="number" class="form-control" id="num" placeholder="Enter your phone number" required>
+                        </div>
+              
+                        <div class="form-group row">
+                          <div class="col">
+                              <label for="pickupDate">Date of Pick Up:</label>
+                              <input type="date" id="pickupDate" name="pickupDate" class="form-control">
+                          </div>
+                          <div class="col">
+                              <label for="dropOffDate">Date of Drop Off:</label>
+                              <input type="date" id="dropOffDate" name="dropOffDate" class="form-control">
+                          </div>
+                      </div>
+                          
+              
+                      <div class="form-group">
+                        <label>Gender:</label><br>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="gender" id="male" value="male" required>
+                            <label class="form-check-label" for="male">Male</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="gender" id="female" value="female" required>
+                            <label class="form-check-label" for="female">Female</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="gender" id="other" value="other" required>
+                            <label class="form-check-label" for="other">Other</label>
+                        </div>
+                    </div>
+              
+                          <div class="form-group" style="margin-top: 20px;">
+                              <label for="dropdown">Select an Pickup and Dropoff Store Location:</label> <br>
+                              <select class="form-control" id="dropdown" required>
+                                  <option value="" selected disabled>Select a Location</option>
+                                  <option value="option1">Jurong East</option>
+                                  <option value="option2">Yishun</option>
+                                  <option value="option3">Paya Lebar</option>
+                              </select>
+                          </div>
+              
+                          <button type="button" class="btn btn-primary" onclick="redirectToCheckout()">Proceed to Checkout</button>
+                        </form>
+                        <script>
+                        function redirectToCheckout() {
+                          // Redirect to the desired HTML page
+                          window.location.href = "checkout.html";
+                      }
+
+                        </script>
+
+                    </div><!-- modal_content -->
+                </div><!-- modal_container -->
+              </div>
+              <script>
+                // Function to allow only numeric input
+                function allowNumbersOnly(event) {
+                    const keyCode = event.keyCode || event.which;
+            
+                    // Allow only numeric keys, Backspace, Delete, Tab, and arrow keys
+                    if ((keyCode < 48 || keyCode > 57) && keyCode !== 8 && keyCode !== 9 && keyCode !== 37 && keyCode !== 39 && keyCode !== 46) {
+                        event.preventDefault();
+                    }
+                }
+            
+                // Attach the function to input fields that require numeric input
+                const numericInputs = document.querySelectorAll('input[type="number"]');
+                numericInputs.forEach(input => {
+                    input.addEventListener('keypress', allowNumbersOnly);
+                });
+            </script>
+
+      <!-- NOTE: hardboil egg -->
+      <div class="type hardboil">
+        <img class="type_img" src="https://cdni.autocarindia.com/ExtraImages/20221109044052_Compass.jpg" alt="">
+        <h3>CAR 2</h3>
+        <p>this car will suit u yay</p>
+        <p>$100 per day</p>
+        <button id="open0" class="viewmore" type="button" name="button" style="cursor: pointer;">&nbspReserve Now</button>
+      </div>
+
+      <div class="type hardboil">
+        <img class="type_img" src="https://cdni.autocarindia.com/ExtraImages/20221109044052_Compass.jpg" alt="">
+        <h3>CAR 3</h3>
+        <p>this car will suit u yay</p>
+        <p>$100 per day</p>
+        <button id="open0" class="viewmore" type="button" name="button" style="cursor: pointer;">&nbspReserve Now</button>
+      </div>
+
+      <div class="type hardboil">
+        <img class="type_img" src="https://cdni.autocarindia.com/ExtraImages/20221109044052_Compass.jpg" alt="">
+        <h3>CAR 4</h3>
+        <p>this car will suit u yay</p>
+        <p>$100 per day</p>
+        <button id="open0" class="viewmore" type="button" name="button" style="cursor: pointer;">&nbspReserve Now</button>
+      </div>
+
+      <div class="type hardboil">
+        <img class="type_img" src="https://cdni.autocarindia.com/ExtraImages/20221109044052_Compass.jpg" alt="">
+        <h3>CAR 5</h3>
+        <p>this car will suit u yay</p>
+        <p>$100 per day</p>
+        <button id="open0" class="viewmore" type="button" name="button" style="cursor: pointer;">&nbspReserve Now</button>
+      </div>
+    </div>
+       
+
+    </div><!-- back -->
+    <div class="bottom">
+      <img height="100px" width="250px" style="margin-top: 30px;" src="Trans_RENTCAR_LOGO.png" alt="logo"><!-- IDEA: img scr is 112.png -->
+      <div class="connectall">
+      <h3>Partnership:</h3>
+      <img id="logo" src="images\logotype-set_53876-12050-removebg-preview.png" alt="loogo">
+      <h3 id="Connect">Connect with Us: </h3>
+      <a target="_blank"href="https://www.facebook.com/" class="fa fa-facebook"></a>
+      <a target="_blank"href="https://twitter.com/i/flow/login" class="fa fa-twitter"></a>
+      <a target="_blank"href="https://www.youtube.com/" class="fa fa-youtube"></a>
+      <a target="_blank"href="https://www.instagram.com/" class="fa fa-instagram"></a>
+      <a target="_blank"href="https://www.reddit.com/register/" class="fa fa-reddit"></a>
+    </div>
+    <div class="" style="float:right;margin-top:-20%;margin-right:20%;">
+      <h3>Contact Us:</h3>
+      <p>Mobile: +65 12345678</p>
+      <p>Address: 190 Antartica Road,#03-10</p>
+      <p>Antartica 159545.</p>
+      <h3>Terms & Condition:</h3>
+      <p><a href="Terms and Condition.html" target ="_blank">Click here for more infromation</a></p>
+      <hr style="width:20%;border:1px;">
+      <p>Copyright &copy; 2022 Eggoulo Inc. All right reserved.</p>
+    </div>
+    </div>
+  </body>
+</html>

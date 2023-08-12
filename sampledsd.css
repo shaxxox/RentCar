@@ -1,0 +1,147 @@
+
+.container{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-wrap:wrap;
+  max-width:1200px;
+  padding:5px 0 5px;
+}
+.container .card{
+  position:relative;
+  min-width:280px;
+  height:350px;
+  box-shadow:inset 10px 10px 10px rgba(0,0,0,0.03),
+  inset -10px -10px 15px rgba(255,255,255,0.5),
+  10px 10px 10px rgba(0,0,0,0.03),
+  -10px -10px 15px rgba(255,255,255,0.5);
+  border-radius:15px;
+  margin:2%;
+}
+.container .card .box{
+  position:absolute;
+  top:20px;
+  left:20px;
+  right:20px;
+  bottom:20px;
+  background:white;
+  border-radius:15px;
+  border:none;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  transition: transform 0.4s, box-shadow 0.4s;
+}
+.container .card:hover .box{
+  transform:translateY(-50px);
+  box-shadow:0 20px 40px rgba(0,0,0,0.2)
+}
+.container .card .box .content{
+  text-align:center;
+  padding: 20px;
+}
+.container .card .box .content .icon{
+  position: relative;
+  width:80px;
+  height:80px;
+  background: darkkhaki;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+.container .card .box .content .icon .fa{
+  color: white;
+  font-size: 2em;
+}
+.container .card .box .content h3{
+font-size: 1em;
+color: black;
+font-weight: 300;
+
+}
+.active{
+  background-color: none;
+}
+.container .card .box .content h4{
+  color: black;
+  font-size: 2em;
+  font-weight: 700;
+}
+.container .card .box .content a{
+  position: relative;
+  display: inline-block;
+  padding: 8px 20px;
+  background: darkkhaki;
+  margin-top: 15px;
+  border-radius: 20px;
+  text-decoration: none;
+  color: white;
+  font-weight: 400;
+}
+.container .card:nth-child(1) .box .content a,.container .card:nth-child(1) .box .content .icon{
+  background: Khaki;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+.container .card:nth-child(2) .box .content a,.container .card:nth-child(2) .box .content .icon{
+  background: darkKhaki;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+.container .card:nth-child(3) .box .content a,.container .card:nth-child(3) .box .content .icon{
+  background: gold;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* The Modal (background) */
+.modaln {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 999; /* Sit on top */
+  padding-top: 1%; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-contentn {
+  background-color:linen;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  height:89%;
+}
+
+/* The Close Button */
+.closen {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.closen:hover,
+.closen:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.sub-details{
+  text-align: center;
+  font-size: 1em;
+  width: 70%;
+  margin: auto;
+}
+.modal-contentn h2{
+  font-size: 2em;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 2%;
+}

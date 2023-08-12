@@ -1,0 +1,121 @@
+*{
+  font-family:Arial, Helvetica, sans-serif;
+}
+body{
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+  font-weight: 500;
+}
+.slides {
+  display: none;
+
+}
+#image1,#image2,#image3{
+  width: 100%;
+  height: 700px;
+  margin-top: 0;
+}
+
+.image1text,.image2text,.image3text{
+  position: absolute;
+  background-color: rgba(84, 43, 3, 0.7);
+  border-radius: 5%;
+  padding: 40px;
+  bottom: 40%;
+  left:20%;
+  text-align: left;
+  transform: translate(-50%,50%);
+  font-weight: 500;
+  font-size: 1.2em;
+}
+.image1text a,.image2text a, .image3text a{
+  position: relative;
+  padding: 15px 40px;
+  background-color: white;
+  color: #555;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.2em;
+  transition: 0.5s;
+  clip-path: polygon(90% 0, 100% 50%, 90% 100%, 0% 100%, 0 56%, 0% 0%);
+}
+.image1text a:hover{
+  background: #FFE4B5;
+  color: white;
+  clip-path: polygon(90% 0%, 100% 50%, 90% 100%, 0% 100%, 10% 50%, 0% 0%);
+}
+.image2text a:hover{
+  background: #FFE4B5;
+  color: white;
+  clip-path: polygon(90% 0%, 100% 50%, 90% 100%, 0% 100%, 10% 50%, 0% 0%);
+}
+.image3text a:hover{
+  background: #FFE4B5;
+  color: white;
+  clip-path: polygon(90% 0%, 100% 50%, 90% 100%, 0% 100%, 10% 50%, 0% 0%);
+}
+/* Slideshow container */
+.slideshow-container{
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+  }
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: transparent;
+  }
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+.image1text{
+  color: black;
+  text-align: left;
+}
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.4);
+  }
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 0.5s;
+  }
+
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .prev, .next,{font-size: 11px}
+  }

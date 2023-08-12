@@ -1,0 +1,543 @@
+*{
+  font-family: Arial, Helvetica, sans-serif;;
+}
+body{
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;;
+  background-color: white;
+  font-weight: 500;
+}
+
+.image img{
+  width: 100%;
+  position:relative;
+  margin-top: -8%;
+}
+
+.image h4{
+  position: absolute;
+  margin-top: -15%;
+  margin-left: 10%;
+  color:black;
+}
+.image h1{
+  position: absolute;
+  margin-top: -20%;
+  margin-left: 10%;
+  color:#000;
+}
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 15px 16px 15px 16px;
+  transition: all 0.3s ease;
+  font-size: 20px;
+}
+.fa{
+    background-color: transparent;
+}
+.icon-bar a:hover {
+  transform:scale(1.2);
+}
+
+.facebook {
+  background: grey;
+  color: white;
+}
+.facebook:hover{
+  background-color:white;
+  color: grey;
+}
+.twitter {
+  background: white;
+  color: grey;
+}
+.twitter:hover{
+  background-color:grey;
+  color: white;
+}
+
+.google {
+  background: grey;
+  color:white;
+}
+.google:hover{
+  background-color:white;
+  color: grey;
+}
+.instagram{
+  background: white;
+  color: grey;
+}
+.instagram:hover{
+  background-color:grey;
+  color: white;
+}
+.youtube {
+  background: grey;
+  color: white;
+}
+.youtube:hover{
+  background-color:white;
+  color: grey;
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 25px;
+  border:none;
+  background-color: darkgrey;
+  border-radius:50%;
+  cursor: pointer;
+  padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 8px;
+
+}
+#myBtn:hover {
+  transform: scale(1.5);
+}
+
+.back{
+  margin: 5%;
+  padding:2% 0 2% 0;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+iframe{
+  border-radius: 10px;
+}
+
+.start{
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  background-color: white;
+  padding: 1.5%;
+  border-radius: 20px;
+  margin-bottom: 2%;
+  display: flex;
+}
+.start p{
+width: 50%;
+margin-right: 5%;
+}
+.skillstitle{
+  text-align: center;
+  font-size: 15px;
+  border: solid;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+  padding: 2%;
+  font-weight: bold;
+  border-radius: 20px;
+}
+.typeofegg_title{
+  text-align: center;
+  font-size: 15px;
+  border: solid;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+  padding: 2%;
+  font-weight: bold;
+  border-radius: 20px;
+}
+.degreeofegg{
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5%;
+  text-align: left;
+  background-color: white;
+  border-radius: 20px;
+  margin-bottom: 2%;
+  position: relative;
+}
+#degreeofeggtitle{
+  float: left;
+  clear: left;
+  margin-left: 10%;
+  margin-top: 8%;
+}
+#degreeofeggtitle1{
+  float: left;
+  clear: left;
+  margin-left: 10%;
+}
+#degreeofeggref{
+  float: left;
+  clear: left;
+  margin-left: 10%;
+}
+#degreeofeggimg{
+  height: 50%;
+  width: 30%;
+  margin-left: 15%;
+}
+.typeofeggs{
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5%;
+  text-align: left;
+  background-color: white;
+  margin-bottom: 2%;
+}
+.type{
+  height:400px;
+  width: 20%;
+  padding: 2%;
+  margin-top: 2%;
+  display: inline-table;
+  overflow: hidden;
+  background-color: linen;
+  margin-left: 4px;
+}
+.type_img{
+  height: 45%;
+  width: 100%;
+}
+.viewmore{
+  background-color: darkgrey;
+  padding: 5%;
+  text-decoration: none;
+  color: white;
+  border: solid grey;
+}
+.viewmore:hover{
+  background-color: transparent;
+  border: solid grey;
+  color: darkgrey;
+}
+.recipe_title{
+  text-align: center;
+  font-size: 15px;
+  border: solid;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+  padding: 2%;
+  font-weight: bold;
+  border-radius: 20px;
+}
+.course{
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5%;
+  text-align: left;
+  background-color: white;
+  margin-bottom: 2%;
+}
+.headersimple{
+  background-image: url("vietnamese-egg-coffee-3030347-hero-01-9897b12116fc4439b415c63110aa90e6.jpg");
+  background-position: right;
+  background-size: 30% 90%;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  height: 30em;
+
+}
+.buttons{
+  padding: 2% 2%;
+  font-size: 10px;
+  font-weight: bold;
+  border: none;
+  background-color: linen;
+  color: brown;
+  cursor: pointer;
+  border: solid transparent;
+}
+.buttons:hover{
+  background:#888 ;
+  border: solid brown;
+}
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 10px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal_content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.cl {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.cl:hover,
+.cl:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.PEIAH{
+  background-image: url("1486048393-paremsan-egg-hole-0317.jpg");
+  background-position: right;
+  background-size: 20% 90%;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  height: 25em;
+}
+.GE{
+  background-image: url("gingerbread-eggnog-1544553951.jpg");
+  background-position: right;
+  background-size: 20% 90%;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  height: 25em;
+}
+.EDNS{
+  background-image: url("54e9913c9c674_-_get-crackin-egg-drop-noodle-soup-0214-s2.jpg");
+  background-position: right;
+  background-size: 20% 90%;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  height: 25em;
+}
+.CE{
+  background-image: url("1493748293-cloud-eggs.jpg");
+  background-position: right;
+  background-size: 20% 90%;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  height: 25em;
+}
+.HECBQ{
+  background-image: url("b82929a5477653d4d8402a16b2e5bf24.jpg");
+  background-position: right;
+  background-size: 20% 90%;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  height: 25em;
+}
+.Q{
+  background-image: url("73bf6dd8ff87c1b6b18fb59b25502492.jpg");
+  background-position: right;
+  background-size: 20% 90%;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  height: 25em;
+}
+.headerMain{
+  background-image: url("croque-madame-with-cranberry-mustard-relish.png");
+  background-position: right;
+  background-size: 30% 90%;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  height: 25em;
+}
+.BEWSAT{
+  background-image: url("54e9913f1fc8e_-_baked-eggs-spinach-tomato-recipe-clv0313-xln.jpg");
+  background-position: right;
+  background-size: 20% 90%;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  height: 25em;
+}
+.RPARPH{
+  background-image: url("roasted-potato-pepper-hash-1614622873.jpg");
+  background-position: right;
+  background-size: 26% 90%;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  height: 25em;
+}
+.CEWS{
+  background-image: url("Curried-Eggs-with-Spinach-0819.jpg");
+  background-position: right;
+  background-size: 35% 90%;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  height: 27em;
+}
+.BB{
+  background-image: url("m-beef-bulgogi-kimchi-egg-fried-rice-1125x1504-1.jpg");
+  background-position: right;
+  background-size: 20% 90%;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  height: 25em;
+}
+.PFR{
+  background-image: url("pineapple-fried-rice.jpg");
+  background-position: right;
+  background-size: 35% 90%;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  height: 25em;
+}
+.CCM{
+  background-image: url("RFO-1400x919-classic-chocolate-mousse-69ef9c9c-5bfb-4750-80e1-31aafbd80821-0-1400x9191.jpg");
+  background-position: right;
+  background-size: 40% 90%;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  height: 25em;
+}
+.SSC{
+  background-image: url("smores-swirl-cake-egg-recipe-1567146150.jpg");
+  background-position: right;
+  background-size: 20% 90%;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  height: 25em;
+}
+.HSSD{
+  background-image: url("54e9913e3d4fa_-_get-crackin-havarti-souffle-0214-s2.jpg");
+  background-position: right;
+  background-size: 20% 90%;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  height: 25em;
+}
+.PSRB{
+  background-image: url("meatmen-rv-thumbnail---pandan-roll1.jpg");
+  background-position: right;
+  background-size: 37% 90%;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  height: 27em;
+}
+.OFECT{
+  background-image: url("708094f4ec0647b373d8910d2f50ad6a.jpg");
+  background-position: right;
+  background-size: 20% 90%;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  height: 25em;
+}
+.JJC{
+  background-image: url("590db5e1ad5a05ba4f0f6506d3df493b.jpg");
+  background-position: right;
+  background-size: 30% 90%;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  height: 25em;
+}
+.WCM{
+  background-image: url("b1087ad6d13a329e27ddf435aad93e07.jpg");
+  background-position: right;
+  background-size: 20% 90%;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  height: 25em;
+}
+.BCCM{
+  background-image: url("Bisquick_Chocolate-Chip_Muffins.webp");
+  background-position: right;
+  background-size: 25% 90%;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  height: 25em;
+}
+.SMBS{
+  background-image: url("meringues-egg-recipes-1567146859.jpg");
+  background-position: right;
+  background-size: 20% 90%;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  height: 25em;
+}
+.P{
+  background-image: url("Stacks-of-pancakes-with-butter-pin.webp");
+  background-position: right;
+  background-size: 20% 90%;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  height: 25em;
+}
+.newsletter{
+  text-align: center;
+  margin-left: auto;
+  margin-right:auto;
+  width: 85%;
+  background-color: gold;
+  padding: 2%;
+  margin-bottom: 2%;
+  color: white;
+  clip-path: polygon(100% 0, 95% 50%, 100% 100%, 0 100%, 5% 50%, 0 0);
+
+}
+.newsletter a{
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+}
+/* NOTE: hr */
+#last{
+  width: 400px;
+  color: gainsboro;
+}
+.bottom{
+  height: 380px;
+  background-color: #002D62;
+  padding-left: 10%;
+  margin-top: 10%;
+  color: white;
+}
+
+/* NOTE: div id="five" */
+#five{
+  text-align: center;
+  float: none;
+  clear: both;
+  margin-top: 10px;
+  }
+  #logo{
+    clear: both;
+    height:50px;
+    width:auto;
+  }
+  #Copyright{
+    clear: both;
+  }
+  #enquires{
+    clear: both;
+  }
+  hr{
+    border-style:solid;
+    border-width: 0.1px;
+    background-color: white;
+  }
+  #Connect{
+    clear: both;
+    font-size: 15px;
+    margin-top: 20px;
+  }
+  .connectall{
+    width: 40%;
+  }

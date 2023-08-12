@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+   <ul id="primary-navigation" data-visible="false" class="primary-navigation flex" id="nav" >
+      <li class="nav current"><a href="home.html">Home</a></li>
+      <li class="nav"><a href="skillsandrecipe1.html">Skills & Recipe</a></li>
+      <li class="nav"><a href="classes.html">Schedule</a></li>
+      <li id="login"><a href="#">Login</a></li>
+
+    </ul>
+
+    <button type="button" id="login" onclick="re_add()" name="button">Login</button>
+   <script type="text/javascript" defer>
+      function re_add(){
+        var id = document.getElementById("login")
+        var parentNode = document.getElementById("primary-navigation");
+        parentNode.removeChild(id);
+        var user_details = localStorage.getItem('in_username');
+        console.log(user_details);
+        user_details = "<a>" + user_details + "</a>"
+        var newListItem = document.createElement("li");
+        newListItem.innerHTML = user_details;
+        parentNode.appendChild(newListItem);
+        newListItem.setAttribute('id','id_no_2');
+        var no2 = document.getElementById('id_no_2');
+        var new1 = document.createElement("ul");
+        no2.appendChild(new1);
+        var new1_list_1 = document.createElement("li");
+        new1_list_1.innerText = "Course";
+        new1.appendChild(new1_list_1);
+        var new1_list_2 = document.createElement("li");
+        new1_list_2.innerText = "Newsletter";
+        new1.appendChild(new1_list_2);
+        var new1_list_3 = document.createElement("li");
+        new1_list_3.innerText = "Log Out";
+        new1.appendChild(new1_list_3);
+      }
+
+    </script>
+  </body>
+</html>

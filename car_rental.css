@@ -1,0 +1,88 @@
+.varieties{
+  font-family: Arial, Helvetica, sans-serif;
+  clear: both;
+}
+.voe{
+  text-align: center;
+  margin-left:400px;
+  margin-right:400px;
+}
+.voe {
+  text-align: center;
+  color: black;
+  padding: 1px;
+  font-weight: 100;
+  position: relative;
+  box-shadow: 0 0 10px #D2B48C,0 0 40px #D2B48C,0 0 80px #D2B48C,0 0 120px #D2B48C;
+  background: #D2B48C;
+}
+
+.animal_link{
+  color: gold;
+  text-decoration:  none;
+  background: rgba(0, 0, 0, 0.0);
+}
+.animals{
+  position: relative;
+  width: 300px;
+  height: 350px;
+  display: inline-block;
+  margin-top: 20px;
+  border: solid 5px #002D62;
+  border-radius: 20px;
+  background-size:300px 300px;
+}
+
+.car{
+  display: block;
+  height: 100px;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40%;
+  float: none;
+  background-color: transparent;
+}
+
+.text_overlay{
+  position: absolute;
+  bottom:0 ;
+  left: 0%;
+  width:100%;
+  height:100%;
+  background: rgba(0, 0, 0, 0.3);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.25s;
+  border-radius: 20px;
+  backdrop-filter:blur(5px);
+}
+.text_overlay > * {
+  transform: translateY(20px);
+  transition: transform 0.25s;
+}
+.text_overlay:hover{
+  opacity: 1;
+}
+.text_overlay:hover > * {
+  transform:translateY(0);
+}
+.text_tittle{
+  font-size: 2em;
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.0);
+}
+.text_description{
+  text-align: center;
+  background: rgba(0, 0, 0, 0.0);
+}
+
+.nothing {
+  text-align: center;
+  font-size: 15px;
+  background: rgba(0, 0, 0, 0.0);
+}
